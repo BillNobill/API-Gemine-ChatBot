@@ -1,0 +1,99 @@
+/*--------------------------------------------------Fontes*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+/*--------------------------------------------------Configuração Padrão*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f0f0f0;
+  height: 100vh;
+  width: 100vw;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+/*--------------------------------------------------Scroll bar*/
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 60, 255);
+  border-radius: 1px;
+  border: 10px solid #33ff00;
+}
+
+.chat-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 8px #0000001a;
+}
+.chat-messages {
+  padding: 10px;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.user-message {
+  background-color: #f0f0f0;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.bot-message {
+  background-color: #e1fee6;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+#chat-form {
+  display: flex;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
+  align-items: center; /* Alinha itens verticalmente */
+}
+#user-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+#user-input::placeholder {
+  color: #aaa;
+}
+#chat-form button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#chat-form button:hover {
+  background-color: #45a049;
+}
