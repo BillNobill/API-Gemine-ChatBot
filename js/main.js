@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI("API_KEY");
+const genAI = new GoogleGenerativeAI("AIzaSyD86naXzhpMMHqtxryQGpRYQXE9BjuxzQA");
 
 const model = genAI.getGenerativeModel({
   model: "gemini-1.5-flash",
@@ -10,7 +10,6 @@ const generationConfig = {
   temperature: 1,
   topP: 0.95,
   topK: 64,
-  maxOutputTokens: 8192,
   responseMimeType: "text/plain",
 };
 
@@ -26,7 +25,7 @@ async function sendMessageToBot(message) {
         role: "user",
         parts: [
           {
-            text: "Você agora é um mestre em informática e em computadores, tire todas as dúvidas do usuário e recepcione ele bem.",
+            text: "Você agora é um mestre em informática e em computadores, tire todas as dúvidas do usuário e recepcione ele bem. Não precisa se apresentar, fala em uma linguagem absurdamente técnica, um nivel quase incompreenssivel de técnico, que o usuario não entenda quase nada.",
           },
         ],
       },
